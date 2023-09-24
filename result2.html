@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  body{ 
+    background-color:rgb(230, 247, 247);
+  }
+  /* Your styles here */
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .text-box {
+    border: 1px solid #ccc;
+    padding: 10px;
+    flex: 1;
+  }
+</style>
+</head>
+<body>
+  <center>
+    <h1 style="color:red;">Subjective Paper Evaluation</h1>
+    <div class="container">
+      <h1>Extracted Text</h1>
+      <div class="text-container">
+        <div class="text-box">
+          <h2>Image 1 Text:</h2>
+          <p>{{ text1 }}</p>
+        </div>
+        <br>
+        <div class="text-box">
+          <h2>Image 2 Text:</h2>
+          <p>{{ text2 }}</p>
+        </div>
+        <br>
+        <div class="text-box">
+            <h2>answer Preprocessed text</h2>
+            <p>{{ answer }}</p>
+        </div>
+        <br>
+
+        <div class="text-box">
+          <h2>Question preprocessed text</h2>
+          <p>{{ question }}</p>
+        </div>
+        <br>
+
+        <div class="text-box">
+          <h2>ngram</h2>
+          <p>{{ n_gram }}</p>
+        </div>
+        <br>
+        <div class="text-box">
+          <h2>rouge</h2>
+          <p>{{ similarity_sco }}</p>
+        </div>
+        <br>
+        <div class="text-box">
+          <h2>Bow score</h2>
+          <p>{{ wob }}</p>
+        </div>
+        <br>
+        <div class="text-box">
+          <h2>keywords score</h2>
+          <p>{{ keywords }}</p>
+        </div>
+        <br>
+        <br>
+        <br>
+      </div>
+    </div>
+  </center>
+</body>
+</html>
